@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+    <h2>Movies</h2>
+    <ul>
+        {% for movie in movies %}
+            <li><a href="{{ url_for('movie_detail', id=movie.id) }}">{{ movie.title }}</a> - Rank: {{ movie.rank }}</li>
+        {% endfor %}
+    </ul>
+
+    <h2>TV Shows</h2>
+    <ul>
+        {% for tv_show in tv_shows %}
+            <li><a href="{{ url_for('tv_show_detail', id=tv_show.id) }}">{{ tv_show.title }}</a> - Rank: {{ tv_show.rank }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}

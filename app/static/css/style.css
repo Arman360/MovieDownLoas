@@ -1,0 +1,18 @@
+body {
+    font-family: Arial, sans-serif;
+}
+header {
+    background: #333;
+    color: white;
+    padding: 1em 0;
+}
+nav ul {
+    list-style-type: none;
+}
+nav ul li {
+    display: inline;
+    margin-right: 1em;
+}
+main {
+    padding: 1em;
+}
